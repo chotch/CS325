@@ -1,0 +1,5 @@
+MIS: only viterbi because its max
+Knapsack: only viterbi because its max
+Coins: both viterbi/djikstra
+
+viterbi sometimes faster sometimess lower.. cannot predict 

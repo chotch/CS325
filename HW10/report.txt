@@ -1,0 +1,14 @@
+best/total: space is O(n^2) and time is O(n^3)
+
+kbest: space is O(n^2 * k + n^2 * n), but n^2 * n wont bother because this is assuming unique heaps for each subproblem but we only use 1 heap so really space is O(n^2 * k). Time is O(n^3 + n^2klogk)
+
+
+Debriefing
+0. Christien Hotchkiss
+1. 8 hours
+2. Difficult - The total function took me awhile to figure out and with the help of Dr. Huang in lecture on Tuesday I think I will be able to figure out all of the kbest test cases.
+3. Mostly alone - some work with Thomas Weathers
+4. 80% - I understand the theory of these functions although coding them is very tough. I could've completed the first two functiosn on my own, but probably not the last one.
+5. Thank you for teaching me the most I've learned in a CS class thus far at OSU! It was tough, but rewarding now that it is done.
+
+

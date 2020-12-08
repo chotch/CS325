@@ -1,0 +1,21 @@
+0. a - Undirected, sparse, cyclic
+   b - directed, sparse, cyclic
+   c - undirected, dense, cyclic
+   d - directed, sparse, cyclic
+   e - undirected, sparse, cyclic??
+   f - directed, sparse, acyclic
+   g - undirected, sparse, acyclic
+   h - directed, sparse, acyclic
+   i - undirected, sparse, cyclic
+
+1. a - the topological sort in the knapsack code is from lowest to highest value for each weight
+   b - top down traverses in the opposite direction going from max weight to least weight
+   c - yes, I assume there is also a top down solution which could maybe be done by looking at the end nodes and then traversing specific nodes based upon in-degree after that
+
+Debriefing
+0. Christien Hotchkiss
+1. 5 hours
+2. Moderate
+3. Mostly alone
+4. I think I understand about 75%. Once again, the theory is quite easily understandable, but the coding gives me difficulties sometimes, which is very frustrating because I feel like I should be more equipped to do these problems and that they should be taking as long because of how well I understand it conceptually.
+5. None

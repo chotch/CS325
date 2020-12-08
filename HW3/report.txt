@@ -1,0 +1,8 @@
+0. Christien Hotchkiss
+1. I spent about 3-4 hours on this assignment. 
+2. I would rate this assignment as moderate. I did not think it was especially easy, and it challenged me enough to make a learning impact.
+3. I worked on this solely alone.
+4. I think I understand about 80% of the material well. Once again I think the theoretical stuff is understandable, but coding sometimes brings a few issues with thorough understanding.
+5. I like the entire purpose of the course: prepping for tech interviews. Last class, the professor indicated that his intention is to best equip us with the tools to do great on an interview, which I think is an awesome purpose that I really appreciate.
+6. The part of the course that I dislike the most is how quickly we breeze over some of the material from CS261. I know that data structures is a prereq and maybe I should be more prepared with that material than I am. So far CS325 has been a brief overview of CS261 which is beneficial, but I wish we didn't breeze over linked lists and hash tables so quickly unless they are not that important (which I truly do not know if they are or not yet).
+

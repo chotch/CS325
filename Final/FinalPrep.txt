@@ -1,0 +1,74 @@
+in order to have a unique topological order just check to see that the queue/s`tack is a singleton before popping, which means there is only one option
+
+to implement k shortest paths using Viterbi for a DAG: each vertex stores k-shortest paths from the source. Then to update shortest path for new node, merge sorted list and take the top k from them with priority so just k pops. Time = O(E+Vklogk). E + Vklogk. edges + vertex*k*logk
+
+Time complexity of Dijkstras using different implementations:
+Heap = (E+E) logE worst case pop E times and only V of them are unique pops E+ElogE
+Heapdict = (V + E) logV V+ElogV
+hash = V^2 + E - fastest for big and dense graphs (but this is rare in practice) V*V + E
+unsorted array = V^2 + EV V*V+E*V
+
+
+Coins can be solved with Viterbi and Dijkstra and so can edit distance. Dijkstra (or BFS) is fastest for coins.
+
+
+For 8 and 9 watch lecture
+
+find path whose longest edge is shortest: use viterbia if DAG which is O(V+E). Change meaning of values on each node - every nodes value should record value of the longest edge on path to that node. Then add weight to goal node plus longest path on edge and take the minimum of new edge + longest(prevNode) and take the minimum. Or use Dijkstra which is O(V+E)logV. use (max,min)
+
+find path whose shortest edge is longest: change viterbi operatiosn to (min, max). Each node stores the shortest edge to get to that node. Then when updating choose the maximum of all the shortest path values stored from previous node. Viterbi is O(V+E) and Dijkstra is V+ElogV
+
+find path whose shortest edge is the longest:
+
+
+Dijkstra with integer weights {1..W} - Modify priority queue to achieve O(VW+E) time : similar to bucket sort. Pqueue is actually (V-1)W+1 buckets  from (0, 1, ..., (V-1)W. Vertex with key k is in bucket k. Scan buckets left to right and pop one vertex from the first non-empty bucket.
+
+
+Count number of parathensizations that return True:
+Use gaps between two T/F as indecies from 0 to n
+true[i][i+1] = 1 if e[i] is T else 0
+false[i][i+1] = 1 if e[i] is F else 0
+
+true[i][j] = sum(true[i][k] * true[k][j], if o[k] is *; 
+true[i][k] * true[k][j] + true[i][k] * false[k][j] + false[i][k] * true[k][j] if o[k] is +) for i<k<j
+
+false[i][j] = sum(true[i][k] * false[k][j] + false[i][k] * true[k][j] + false[i][k] * false[k][j], if o[[k] is *; false[i][k] * false[k][j] if o[k] is +) for i<k<j
+
+return true[0][n]
+O(n^3) time
+
+
+representing each number of a sum of squares
+time: O(n^2) or better
+opt[n] = {1 if n is a square number; min(opt[n-k*k] + 1, for 1<=k <square root (n)}
+opt[n] = {1 if n is square number else min(opt[n-k^2] + 1 for 1 <=k <sqrt(n))}
+Time complexity of O(n^1.5) - more accurately H_n^(-0.5) where H is generalized harmonic number
+
+Hypergraph: RNA structure, #of BSTS, #of boolean expressions
+
+optimization probs: coins, RNA, MIS, TSP
+
+can use Viterbi or Dijkstra: Viterbi only works for non-optimzation (counting/sum/average problems). and Dijkstra is "best-first" so must define "best"
+
+other hypergraph structures: quicksort, mergesort (two side subproblems - recursion). NOT quickselect or binary search (one sided subproblem - tail recursion)
+
+Edit Distance:
+when edit distance is small (almost all diagonal copying) then Dijkstra's is faster. In cases with large edit distance Viterbi is faster
+
+For two input strings (s,t):
+opt[i,j] = edit distance between s{1...i} and t{1...j}
+opt[i,j] = min(opt[i-1,j-1] + (s[i] != t[j]), opt[i-1,j] + 1, opt[i,j-1] + 1)
+
+= min(opt[i-1,j-1] + (s[i] != t[j]), opt[i-1,j] + 1, opt[i,j-1] + 1)
+
+
+baseCase:
+opt[0,0] = 0
+opt[0,j] = j
+opt[i,0] = i
+
+
+return opt[len(s), len(t)]
+space and time = O(n*m)
+where n = len(s) and t = len(m)
+*Can be made graph problem: solve shortest path from (0,0) to (len(s), len(t)) and is DAG so Viterbi or Dijkstra)

@@ -1,0 +1,27 @@
+1. dictionary is real life for binary search and hash table. Alphabetical dictionary is binary search. Table of contents hash table or index at end of textbook is hash table. 
+4. a. T(n) = ... 2T(n/2) + O(n) = quicksort best case and merge sort (nlogn)
+2T(n/2) + O(1) = traverse balance binary tree (n)
+T(n/2) + O(n) = quickselect (n)
+T(n/2) + O(1) = binary search (logn)
+2T(n/2) + O(logn) = heapify (n) (only top guys does logn work and bottom layer does no work) n/4 guys do very little work n/8 do a little more
+T(n-1) + O(n) = quicksort worst case, quickselect worst case, selection sort, inserstion sort (n^2)
+T(n-1) + O(logn) = keep using heap push/heap insert (nlogn)
+
+and study homework 4 time complexities for one more of the above
+
+know easy solution for k way mergesorti(mymerge) and nbestc
+
+
+
+1. queue: waiting in line at restaurant
+   stack: elevator (assuming everyone gets off on same floor)
+   pqueue: emergency room
+   binary search/hash table: dictionary - binary search looking through and hash table in the index
+2. 
+3
+4. above
+5. bubble down needs more comparisons per step. and bubble down is non deterministic
+6.
+7. naive recursion is closest to a^n with a = 1.618
+  the memoized recursive runs with time and space of O(n)
+  the O(1) space solution is the bottom up with a,b = b, a+b. return a

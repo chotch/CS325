@@ -1,0 +1,8 @@
+0. Mergesot, quicksort with the first element as a pivot, selection sort, and insertion sort can be made stable. Quicksort with random pivot and heap sort cannot be made stable.
+
+Debriefing
+1. This assignment took me about 4 hours.
+2. Upon first looking at the assignment I anticipated that it would be difficult. However, after watching a few youtube videos on working through binary trees I would evaluate the homework as moderate.
+3. I worked mostly on my own. I chatted with two peers through text messages to discuss approaches on how to work the problems.
+4. I think I understand the material about 70-80%. I confidently understand the theory of how to work through the problems although am not super comfortable with coding them using recursion.
+5. None

@@ -1,0 +1,11 @@
+1. Dijkstras: time: O(V+E)logV
+     	   space: O(V+E)
+2. nbest: time: O(nlogk) using heapify only
+
+Debriefing
+0. Christien Hotchkiss
+1. Approximately 2 hours
+2. Easy/moderate
+3. All alone
+4. I really understand this material. After doing viterbi, I found dijkstra's pretty easy. I struggled a bit getting most test cases undre the time limit and am still having a problem getting test case 9 correct although all others are and under 0.2 seconds.
+5. I am scared for HW 10

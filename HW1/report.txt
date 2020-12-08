@@ -1,0 +1,16 @@
+Christien Hotchkiss
+CS 325 HW 1
+
+0. The best case and average case time complexities of quicksort are O(nlogn). This is because the number of recursive calls is logn because of partitioning the array in conjunction with n to place all the items in their correct location . The worst case time complexity of quicksort is O(n^2) which occurs during a situation in which the array to be sorted is already sorted in either ascending or descending order. Quicksort does not have a check to determine whether the array is already sorted or not. 
+
+1. The best, average, and worst case time complexities of quickselect with a randomized pivot are O(n). This is because each time the function is recursively called only one half of the array needs to be re analyzed. Once the pivot point is randomly chosen and the smaller and greater values are partitioned, an if statement can check whether the kth element will be present in the left or right subsection which reduces the recursive calls, ultimately lowering the complexities to O(n).  
+
+2.The time complexities for the sort function are all O(n). The only way to print and return each integer element in the array is to loop through all the values so the best, average, and wrost case is O(n). The time complexity for the search function is O(n) for the way I implemented it. I simply did a linear search thorugh the sorted array which is definitely not the quickest considering the array is sorted. I think by doing a binary search the time complexity could be reduced to O(logn). The time complexity of the insert function is also O(n). I attempted to check whether the inserted value x lies as the largest or smallest element in the array. This is a best case scenario with a time complexity of O(1). However, if the element lies in the middle then the complexity is O(n). 
+
+
+Debriefing:
+1. I spent approximately 4 hours on this homework assignment.
+2. I would rate this homework as moderate to difficult. I have never worked in python before and haven't taken a coding class since last Winter term so it took a bit of adjusting to do.
+3. I worked on this homework alone.
+4. I think I definitely understanding question 0 and question 1 of the homework. I spent a lot of time working through problem 1, and definitely have a good grasp of. The functions in question 2 i do not have a very good grasp on yet. I need some time to get settled into CS work again and then I will be good.
+5. none

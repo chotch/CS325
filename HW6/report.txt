@@ -1,0 +1,27 @@
+TOP DOWN IS FASTER
+
+0. For unbounded:
+a. The greedy solution is to evaluate vi/wi and always take the item with best ratio.
+b. Thi
+c. The subproblem is to find the max value possible given a weight w such that w is less than W.
+d. opt[w] = max(i to n) opt[w-wi] + vi
+e. The base cases are opt[w] = 0 when W < min wi
+f. Time: O(W*n) space: O(W)
+   For bounded:
+a. Greedy would be to take item i if the weight of item i is small enough to fit in the bag
+b. (10, [(4,5),(4,6), (3,10)] 
+c. Subproblem is to find the max value possible given a weight w such that w is less than W
+d. opt[w] = opt[w-wi] + vi if opt[w-wi] + vi > opt[w]
+e. opt[w] = 0 when W < min wi
+f. Time and space are O(W*n)
+
+Debriefing
+0. Christien Hotchkiss
+1. 5 hours
+2. difficult
+3. Mostly alone although I discussed strategies for keeping track of which items were placed in bag with Thomas Weathers
+4. 75%. I think getting the recurrence relations are doable and I understand the method for solving the problem. However, coding it is much more difficult and I needed lots of help from youtube videos.
+5. I like how the professor spends considerable time going over homework. homework seems to to be the area of this class where the most is learned and going over them is very helpful.
+6. One area that I dont get about the class is specific to the mis.py homework assignment. The professor posted a notifaction on slack about the 6th test case saying that we would get credit if we had the sum of the numbers correct even if a different combination of numbers was used than the answer script. I checked with the test case that the professor released and I got the same sum, but received a 2.5/3 even though I was expecting atleast a 2.6/3 for getting the 6th test case correct by what the professor posted on slack.
+
+

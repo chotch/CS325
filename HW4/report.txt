@@ -1,0 +1,16 @@
+1. a. To enumerate all pairs and then sort takes O(n^2)
+   b. To enumerate all pairs and then use qselect takes O(nlogn)
+   c. To enumerate 2n pairs using baby dijkstra takes O(n)
+2. The time complexity of three way merge sort is O(nlog(3n)) which simplifies to O(nlogn).
+3. The time complexity of k smallest using a heap is O(nlogk).
+4. Optional (fill in later)
+
+
+Debriefing
+0. Christien Hotchkiss
+1. I spent about 30 minutes on the graded portion of the assignment and only about 30 minutes thinking about the other problems. I did not have time to implemenet most of the nongraded ones this week, but will ensure that I thoroughly look over solutions so that I understand them.
+2. I would rate this homework as moderate. I really understand heaps well.
+3. Mostly alone although I discussed the graded portion with Thomas Weathers briefly.
+4. I understand about 70% of this homework assignment. I feel confident with any heap or ksmallest problems. Merge sort is still difficult to me and I have yet to truly understand dijkstras. 
+5. I really like working with binary heaps and BSTs. They seem very intuitive, usefull, and unique and I think I am good at understanding the material present within them.
+6. The part of the course I dislike the most is mergesort. I am having a tough time understanding the implementation provided in the homework solutions and I dont quite understand it conceptually either. 

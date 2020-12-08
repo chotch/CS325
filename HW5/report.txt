@@ -1,0 +1,13 @@
+0. Using just recursion with Fibonacci is not really O(n). Once the value to be computer is larger than about 1000, it takes extremely long. However, using recursion with memoization is much closer to O(n) time.
+1. The time complexity of the mis.py function is O(n) because there are a max of O(n) subproblems that must be calculated and stored in the dictionary. 
+2a.The time complexity of the bsts.py function is also O(n) because of the use of memoization which reduces the amount of time spent recalculating the sub problems.
+2b.The famous series represented by the possible binary search trees with n nodes is the Catalan number: (2n)! / ((n+1)! * n!)
+
+Debriefing
+0.Christien Hotchkiss
+1.4 hours
+2. I would rate it as moderate/difficult. There is no way I could've done these problems without help from the internet. The bitstrings problem was doable and the maximum independent set was slightly harder. 
+3. I worked on it mostly alone although my friend, Thomas Weathers, and I chatted a little bit via text about the homework.
+4. I feel like I understand about 50% of the material. Using memoization is still very new to me and I am quite lost using it. However, with a few weeks I feel confident I can master this very important topic.
+5. Although I am very bad at dynamic programming so far I think it is a very fascinating. I look forward to learning more about it and improving my skills with it. 
+6. There is nothing I really dislike about the course. For this homework, it sucks not being able to see the last 5 test cases because I only have the first 5 correct at the moment, but I totally understand otherwise students could use 10 if statements to get a perfect 10/10 on the graded homework. 

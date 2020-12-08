@@ -1,0 +1,2 @@
+def numBST(n):
+	return
